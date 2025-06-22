@@ -1,6 +1,6 @@
 function innerHtmlCard(nome, desc, imgSrc, imgSrc2, preco) {
 	let cardHtml = `
-		<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex border-0">
+		<div class="col-8 col-sm-6 col-md-4 col-lg-3 d-flex border-0">
 			<div class="card shadow-sm rounded flex-fill h-100">
 				<img
 					src="${imgSrc}"
@@ -31,14 +31,14 @@ function innerHtmlCard(nome, desc, imgSrc, imgSrc2, preco) {
 
 innerHtmlCard(
 	"Camisa Polo Azul",
-	"Camisa polo azul em algodão, confortável e estilosa.",
+	"Camisa polo azul em algodao, confortavel e estilosa.",
 	"./style/image/camisas/camisa1a.png",
 	"./style/image/camisas/camisa1b.png",
 	79.90
 );
 innerHtmlCard(
 	"Camisa Social Branca",
-	"Camisa social branca clássica, ideal para ocasiões formais.",
+	"Camisa social branca classica, ideal para ocasioes formais.",
 	"./style/image/camisas/camisa2a.png",
 	"./style/image/camisas/camisa2b.png",
 	99.90
@@ -73,14 +73,14 @@ innerHtmlCard(
 );
 innerHtmlCard(
 	"Camisa Manga Longa Cinza",
-	"Camisa manga longa cinza, versátil para várias ocasiões.",
+	"Camisa manga longa cinza, versatil para varias ocasioes.",
 	"./style/image/camisas/camisa7a.png",
 	"./style/image/camisas/camisa7b.png",
 	99.90
 );
 innerHtmlCard(
 	"Camisa Listrada Azul e Branca",
-	"Camisa listrada azul e branca, estilo clássico renovado.",
+	"Camisa listrada azul e branca, estilo classico renovado.",
 	"./style/image/camisas/camisa8a.png",
 	"./style/image/camisas/camisa8b.png",
 	94.90

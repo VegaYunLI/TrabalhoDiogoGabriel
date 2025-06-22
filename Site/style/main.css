@@ -1,5 +1,5 @@
 body {
-	font-family: "Kode Mono", monospace;
+	font-family: 'sans-copperplate gothic', sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: #fff;
@@ -29,9 +29,8 @@ body {
 
 .title {
 	transition: 0.5s;
-	font-family: 'Copperplate Gothic', sans-serif;
+	font-family: 'sans-copperplate gothic', sans-serif;
 	display: flex;
-	font-weight: bolder;
 	color: #fff;
 	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 	font-size: 6vw;
@@ -71,7 +70,10 @@ home.html p {
 	display: flex;
 	flex-direction: column;
 }
-
+@font-face {
+	font-family: 'sans-copperplate gothic';
+	src: url('./fonts/Sans-Copperplate\ Gothic\ Regular.ttf') format('truetype');
+}
 @media (max-width: 1200px) {
 	.home {
 		background-image: url('./image/backgroundIMG2.png');

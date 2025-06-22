@@ -1,0 +1,267 @@
+body {
+	font-family: 'sans-copperplate gothic', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.container-fluid {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.logo {
+	transition: 1s;
+}
+
+.logo:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.title {
+	transition: 0.5s;
+	font-family: 'sans-copperplate gothic', sans-serif;
+	display: flex;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	font-size: 6vw;
+	margin: 0;
+	padding: 0;
+}
+
+.title:hover {
+	color: rgba(0, 0, 0, 0.1);
+	text-shadow: none;
+	cursor: default;
+	transition: 1.5s ease;
+}
+
+.desc {
+	display: flex;
+	font-size: 1.2vw;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	margin: 0;
+	justify-content: center;
+	text-align: center;
+}
+
+.home .html p {
+	font-size: 1em;
+	color: #888;
+	margin: 0;
+	text-shadow: 0px 0px 3px #000;
+}
+
+.home{
+	
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.sec1, .sec2 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec1::before, .sec2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece */
+    z-index: 1;
+}
+
+.sec1 .row, .sec2 .row {
+    position: relative;
+    z-index: 2; /* Fica acima do escuro */
+}
+.sec1{
+    background-image: url('./image/backgroundIMG1.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.text {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+}
+.text2 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+}
+.sec2{
+    background-image: url('./image/backgroundIMG-1.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@font-face {
+	font-family: 'sans-copperplate gothic';
+	src: url('./fonts/Sans-Copperplate\ Gothic\ Regular.ttf') format('truetype');
+}
+@media (max-width: 1200px) {
+	.sec1 {
+        background-image: url('./image/backgroundIMG2.png');
+    }
+	.sec2 {
+        background-image: url('./image/backgroundIMG-2.png');
+    }
+
+	.title {
+		font-size: 6vw;
+	}
+
+	.desc {
+		font-size: 1.7vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.sec1 {
+        background-image: url('./image/backgroundIMG2.png');
+    }
+	.sec2 {
+        background-image: url('./image/backgroundIMG-2.png');
+    }
+
+	.title {
+		font-size: 10vw;
+	}
+
+	.desc {
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 480px) {
+	.sec1 {
+        background-image: url('./image/backgroundIMG3.png');
+    }
+	.sec2 {
+        background-image: url('./image/backgroundIMG-3.png');
+    }
+
+	.title {
+		font-size: 8vw;
+	}
+
+	.desc {
+		font-size: 3vw;
+	}
+}
+
+.pl-50 {
+	padding-left: 50%;
+}
+
+.ico {
+	color: #fff;
+	border: none;
+	outline: none;
+}
+
+.ico:focus {
+	color: #bbb;
+	border: none;
+	outline: none;
+	transition: color 0.3s ease;
+}
+
+.nav-link {
+	transition: 1s;
+	color: #bbb;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+	color: #fff;
+	transition: transform 0.2s;
+	transform: scale(1.2);
+}
+
+a {
+	transition: 0.2s;
+	text-shadow: 0px 0px 3px #ffffff;
+	text-decoration: none;
+	color: #aaa;
+}
+
+a:hover {
+	transition: 1s;
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+	color: #fff;
+	transform: scale(1.2);
+}
+
+.navbar {
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+	padding: 0;
+}
+
+.row {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+form{
+	display: flex;
+	height: 50vh;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+	border-radius: 1rem;
+	background: transparent;
+	backdrop-filter: blur(10px);
+	border:#000 2px solid;
+	margin: 10% 0.5rem;
+	padding: 0.5rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn{
+	border: none;
+	background-color: #000;
+	margin-bottom: 1rem;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+	outline: #000 2px solid;
+}
+.form-control{
+	border-radius: 2rem;
+	background: transparent;
+	outline: #000 2px solid;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: #000 2px solid;
+}
+.pp{
+	color: #555;
+}
+.pp:hover{
+	color: #000;
+}
