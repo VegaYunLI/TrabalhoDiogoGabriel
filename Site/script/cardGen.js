@@ -29,62 +29,151 @@ function innerHtmlCard(nome, desc, imgSrc, imgSrc2, preco) {
 	cardContainer.innerHTML += cardHtml;
 }
 
-innerHtmlCard(
-	"Camisa Polo Azul",
-	"Camisa polo azul em algodao, confortavel e estilosa.",
-	"./style/image/camisas/camisa1a.png",
-	"./style/image/camisas/camisa1b.png",
-	79.90
-);
-innerHtmlCard(
-	"Camisa Social Branca",
-	"Camisa social branca classica, ideal para ocasioes formais.",
-	"./style/image/camisas/camisa2a.png",
-	"./style/image/camisas/camisa2b.png",
-	99.90
-);
-innerHtmlCard(
-	"Camisa Xadrez Vermelha",
-	"Camisa xadrez vermelha, perfeita para um visual casual.",
-	"./style/image/camisas/camisa3a.png",
-	"./style/image/camisas/camisa3b.png",
-	89.90
-);
-innerHtmlCard(
-	"Camisa Preta Slim",
-	"Camisa xadrez vermelha, perfeita para um visual casual.",
-	"./style/image/camisas/camisa4a.png",
-	"./style/image/camisas/camisa4b.png",
-	109.90
-);
-innerHtmlCard(
-	"Camisa Jeans",
-	"Camisa jeans resistente, ótima para o dia a dia.",
-	"./style/image/camisas/camisa5a.png",
-	"./style/image/camisas/camisa5b.png",
-	119.90
-);
-innerHtmlCard(
-	"Camisa Estampada Tropical",
-	"Camisa estampada com tema tropical, leve e divertida.",
-	"./style/image/camisas/camisa6a.png",
-	"./style/image/camisas/camisa6b.png",
-	89.90
-);
-innerHtmlCard(
-	"Camisa Manga Longa Cinza",
-	"Camisa manga longa cinza, versatil para varias ocasioes.",
-	"./style/image/camisas/camisa7a.png",
-	"./style/image/camisas/camisa7b.png",
-	99.90
-);
-innerHtmlCard(
-	"Camisa Listrada Azul e Branca",
-	"Camisa listrada azul e branca, estilo classico renovado.",
-	"./style/image/camisas/camisa8a.png",
-	"./style/image/camisas/camisa8b.png",
-	94.90
-);
+const camisasData = {
+	"Camisa1": {
+		nome: "Camisa",
+		desc: "Camisa",
+		imgSrc: "./style/image/camisas/camisa1a.png",
+		imgSrc2: "./style/image/camisas/camisa1b.png",
+		preco: 79.90
+	},
+	"Camisa2": {
+		nome:"Camisa",
+		desc: "Camisa",
+		imgSrc: "./style/image/camisas/camisa2a.png",
+		imgSrc2: "./style/image/camisas/camisa2b.png",
+		preco: 99.90
+	},
+	"Camisa3": {
+		desc: "Camisa",
+		imgSrc: "./style/image/camisas/camisa3a.png",
+		imgSrc2: "./style/image/camisas/camisa3b.png",
+		preco: 89.90
+	},
+	"Camisa4": {
+		desc: "Camisa",
+		imgSrc: "./style/image/camisas/camisa4a.png",
+		imgSrc2: "./style/image/camisas/camisa4b.png",
+		preco: 109.90
+	},
+	"Camisa5": {
+		desc: "Camisa",
+		imgSrc: "./style/image/camisas/camisa5a.png",
+		imgSrc2: "./style/image/camisas/camisa5b.png",
+		preco: 119.90
+	},
+	"Camisa6": {
+		desc: "Camisa",
+		imgSrc: "./style/image/camisas/camisa6a.png",
+		imgSrc2: "./style/image/camisas/camisa6b.png",
+		preco: 89.90
+	},
+	"Camisa7": {
+		desc: "Camisa",
+		imgSrc: "./style/image/camisas/camisa7a.png",
+		imgSrc2: "./style/image/camisas/camisa7b.png",
+		preco: 99.90
+	},
+	"Camisa8": {
+		desc: "Camisa listrada azul e branca, estilo classico renovado.",
+		imgSrc: "./style/image/camisas/camisa8a.png",
+		imgSrc2: "./style/image/camisas/camisa8b.png",
+		preco: 94.90
+	}
+};
+const calcasData = {
+	"Calca1": {
+		nome: "Calça Jeans",
+		desc: "Calça jeans azul tradicional.",
+		imgSrc: "./style/image/calcas/calca1a.jpg",
+		imgSrc2: "./style/image/calcas/calca1b.jpg",
+		preco: 129.90
+	},
+	"Calca2": {
+		nome: "Calça Sarja",
+		desc: "Calça de sarja bege confortável.",
+		imgSrc: "./style/image/calcas/calca2a.jpg",
+		imgSrc2: "./style/image/calcas/calca2b.jpg",
+		preco: 139.90
+	},
+	"Calca3": {
+		nome: "Calça Jogger",
+		desc: "Calça jogger preta esportiva.",
+		imgSrc: "./style/image/calcas/calca3a.jpg",
+		imgSrc2: "./style/image/calcas/calca3b.jpg",
+		preco: 119.90
+	},
+	"Calca4": {
+		nome: "Calça Social",
+		desc: "Calça social cinza para ocasiões formais.",
+		imgSrc: "./style/image/calcas/calca4a.jpg",
+		imgSrc2: "./style/image/calcas/calca4b.jpg",
+		preco: 159.90
+	},
+};
+const blusasData = {
+	"Blusa1": {
+		nome: "Blusa Básica",
+		desc: "Blusa básica branca, algodão.",
+		imgSrc: "./style/image/blusas/blusa1a.png",
+		imgSrc2: "./style/image/blusas/blusa1b.png",
+		preco: 59.90
+	},
+	"Blusa2": {
+		nome: "Blusa Manga Longa",
+		desc: "Blusa manga longa azul marinho.",
+		imgSrc: "./style/image/blusas/blusa2a.png",
+		imgSrc2: "./style/image/blusas/blusa2b.png",
+		preco: 69.90
+	},
+	"Blusa3": {
+		nome: "Blusa Estampada",
+		desc: "Blusa estampada floral, tecido leve.",
+		imgSrc: "./style/image/blusas/blusa3a.png",
+		imgSrc2: "./style/image/blusas/blusa3b.png",
+		preco: 79.90
+	},
+	"Blusa4": {
+		nome: "Blusa Moletom",
+		desc: "Blusa de moletom cinza, capuz.",
+		imgSrc: "./style/image/blusas/blusa4a.png",
+		imgSrc2: "./style/image/blusas/blusa4b.png",
+		preco: 99.90
+	}
+};
+
+Object.values(camisasData).forEach(camisa => {
+	innerHtmlCard(
+		camisa.nome,
+		camisa.desc,
+		camisa.imgSrc,
+		camisa.imgSrc2,
+		camisa.preco
+	);
+});
+
+Object.values(calcasData).forEach(calca => {
+	innerHtmlCard(
+		calca.nome,
+		calca.desc,
+		calca.imgSrc,
+		calca.imgSrc2,
+		calca.preco
+	);
+});
+
+Object.values(blusasData).forEach(blusa => {
+	innerHtmlCard(
+		blusa.nome,
+		blusa.desc,
+		blusa.imgSrc,
+		blusa.imgSrc2,
+		blusa.preco
+	);
+});
+
+
+
 function adicionarAoCarrinho(nome, preco) {
 	let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
