@@ -1,5 +1,5 @@
 body {
-	font-family: 'sans-copperplate gothic', sans-serif;
+	font-family: 'Kode Mono', sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: #fff;
@@ -7,6 +7,12 @@ body {
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
+}
+.kode-mono-regular {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container-fluid {
@@ -29,7 +35,7 @@ body {
 
 .title {
 	transition: 0.5s;
-	font-family: 'sans-copperplate gothic', sans-serif;
+	font-family: 'Kode Mono', sans-serif;
 	display: flex;
 	color: #fff;
 	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
